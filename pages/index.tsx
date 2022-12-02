@@ -15,6 +15,21 @@ export default function Home() {
       😮‍💨 😤 😠 😡 🤬 🤯 😳 🥵 🥶 😱 😨 😰 😥 😓 🫣 🤗 🫡 🤔 🫢 🤭 🤫 🤥 😶 😶‍🌫️ 😐 😑
       😬 🫠 🙄 😯 😦 😧 😮 😲 🥱 😴 🤤 😪 😵 😵‍💫 🫥 🤐 🥴 🤢 🤮 🤧 😷 🤒 🤕 🤑 🤠
       😈 👿 👹 👺 🤡 💩 👻 💀 ☠️ 👽 👾 🤖 🎃 😺 😸 😹 😻 😼 😽 🙀 😿 😾
+      <form name="food" data-netlify="true" action="/" method="POST">
+        <label>
+          Bestellen! 🍕
+          <input type="radio" name="food-choice" value="pizza" />
+        </label>
+        <label>
+          Felix bekocht dich! 🍕
+          <input type="radio" name="food-choice" value="felix-cooking" />
+        </label>
+        <label>
+          Gehe mit Felix essen... Felix bezahlt! 🍕
+          <input type="radio" name="food-choice" value="eat-outside" />
+        </label>
+        <button type="submit">Send</button>
+      </form>
       <main className={styles.main}></main>
     </div>
   );
